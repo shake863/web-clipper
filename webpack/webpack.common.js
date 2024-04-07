@@ -163,7 +163,7 @@ module.exports = {
     }),
     process.env.NODE_ENV === 'development'
       ? new ExtensionReloader({
-          port: 9091,
+          port: 9092,
           reloadPage: false,
           entries: {
             contentScript: 'content_script',

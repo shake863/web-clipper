@@ -8,7 +8,7 @@ import { stringify } from 'qs';
 import form from './form';
 
 export default (): ServiceMeta => {
-  const oauthUrl = `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?${stringify({
+  const oauthUrl = `https://login.microsoftonline.com/${config.oneNoteTenantId}/oauth2/v2.0/authorize?${stringify({
     scope: 'Notes.Create User.Read offline_access',
     client_id: config.oneNoteClientId,
     state: Container.get(IConfigService).id,

@@ -5,6 +5,7 @@ interface WebClipperConfig {
   yuqueCallback: string;
   yuqueScope: string;
   oneNoteCallBack: string;
+  oneNoteTenantId: string;
   oneNoteClientId: string;
 }
 
@@ -19,13 +20,14 @@ let config: WebClipperConfig = {
   yuqueClientId: 'D1AwzCeDPLFWGfcGv7ze',
   yuqueCallback: 'http://webclipper-oauth.yfd.im/yuque_oauth',
   yuqueScope: 'doc,group,repo,attach_upload',
-  oneNoteClientId: '563571ad-cfcd-442a-aa34-046bad24b1b6',
-  oneNoteCallBack: 'https://webclipper-oauth.yfd.im/onenote_oauth',
+  oneNoteClientId: '92ba8f79-3e54-4edc-8e37-bce94b90f12e',
+  oneNoteTenantId: '60b31ed9-a184-4711-82bf-bed9d9088086',
+  oneNoteCallBack: 'https://oauth.shake863.workers.dev/rsssave/redirect',
 };
 
 if (process.env.NODE_ENV === 'development') {
   config = Object.assign({}, config, {
-    icon: 'icon-dev.png',
+    icon: 'icon.png',
   });
 }
 

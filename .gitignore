@@ -13,3 +13,5 @@ webclipper.zip
 
 .now
 release
+.yarn/install-state.gz
+.yarnrc.yml

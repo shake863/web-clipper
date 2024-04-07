@@ -5,7 +5,7 @@ const getBasicManifest = () => {
   const packageVersion = getPackageJsonVersion();
   const commitsCount = getCommitsCount();
   const version = generateVersion({ version: packageVersion, commitsCount });
-  let name = 'Web Clipper';
+  let name = 'Web Clipper (shake863)';
   if (version !== packageVersion) {
     name = 'Web Clipper Beta';
   }

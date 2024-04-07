@@ -2,13 +2,11 @@
   "name": "web-clipper",
   "version": "1.36.0",
   "description": "Universal open source web clipper.",
-  "bin": {
-    "web-clipper": "bin/index.js"
-  },
+  "bin": "bin/index.js",
   "scripts": {
     "test": "vitest",
     "cov": "vitest --coverage",
-    "dev": "cross-env NODE_ENV=development yarn _dev",
+    "dev": "cross-env NODE_ENV=development NODE_OPTIONS=--openssl-legacy-provider yarn _dev",
     "dev:ff": "cross-env TARGET_BROWSER=Firefox NODE_ENV=development yarn _dev",
     "_dev": "webpack --config webpack/webpack.dev.js --watch",
     "release": "ts-node script/release.ts",
